@@ -1,0 +1,24 @@
+{
+  "name": "countryapi",
+  "version": "1.0.0",
+  "description": "A simple API to provide Nigerian states and local governments for each state",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon start"
+  },
+  "keywords": [
+    "NODEJS",
+    "EXPRESSJS",
+    "MONGODB"
+  ],
+  "author": "Bolarinwa Ahmed (Abatoms)",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.1.4",
+    "express": "^4.18.2",
+    "mongoose": "^7.3.0",
+    "morgan": "^1.10.0"
+  }
+}
