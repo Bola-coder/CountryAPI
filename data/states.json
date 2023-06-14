@@ -1,0 +1,187 @@
+[
+  {
+    "state": "Abia",
+    "capital": "Umuahia",
+    "region": "South East"
+  },
+  {
+    "state": "Adamawa",
+    "capital": "Yola",
+    "region": "North East"
+  },
+  {
+    "state": "Akwa Ibom",
+    "capital": "Uyo",
+    "region": "South South"
+  },
+  {
+    "state": "Anambra",
+    "capital": "Awka",
+    "region": "South East"
+  },
+  {
+    "state": "Bauchi",
+    "capital": "Bauchi",
+    "region": "North East"
+  },
+  {
+    "state": "Bayelsa",
+    "capital": "Yenagoa",
+    "region": "South South"
+  },
+  {
+    "state": "Benue",
+    "capital": "Makurdi",
+    "region": "North Central"
+  },
+  {
+    "state": "Borno",
+    "capital": "Maiduguri",
+    "region": "North East"
+  },
+  {
+    "state": "Cross River",
+    "capital": "Calabar",
+    "region": "South South"
+  },
+  {
+    "state": "Delta",
+    "capital": "Asaba",
+    "region": "South South"
+  },
+  {
+    "state": "Ebonyi",
+    "capital": "Abakaliki",
+    "region": "South East"
+  },
+  {
+    "state": "Edo",
+    "capital": "Benin City",
+    "region": "South South"
+  },
+  {
+    "state": "Ekiti",
+    "capital": "Ado Ekiti",
+    "region": "South West"
+  },
+  {
+    "state": "Enugu",
+    "capital": "Enugu",
+    "region": "South East"
+  },
+  {
+    "state": "Gombe",
+    "capital": "Gombe",
+    "region": "North East"
+  },
+  {
+    "state": "Imo",
+    "capital": "Owerri",
+    "region": "South East"
+  },
+  {
+    "state": "Jigawa",
+    "capital": "Dutse",
+    "region": "North West"
+  },
+  {
+    "state": "Kaduna",
+    "capital": "Kaduna",
+    "region": "North West"
+  },
+  {
+    "state": "Kano",
+    "capital": "Kano",
+    "region": "North West"
+  },
+  {
+    "state": "Katsina",
+    "capital": "Katsina",
+    "region": "North West"
+  },
+  {
+    "state": "Kebbi",
+    "capital": "Birnin Kebbi",
+    "region": "North West"
+  },
+  {
+    "state": "Kogi",
+    "capital": "Lokoja",
+    "region": "North Central"
+  },
+  {
+    "state": "Kwara",
+    "capital": "Ilorin",
+    "region": "North Central"
+  },
+  {
+    "state": "Lagos",
+    "capital": "Ikeja",
+    "region": "South West"
+  },
+  {
+    "state": "Nasarawa",
+    "capital": "Lafia",
+    "region": "North Central"
+  },
+  {
+    "state": "Niger",
+    "capital": "Minna",
+    "region": "North Central"
+  },
+  {
+    "state": "Ogun",
+    "capital": "Abeokuta",
+    "region": "South West"
+  },
+  {
+    "state": "Ondo",
+    "capital": "Akure",
+    "region": "South West"
+  },
+  {
+    "state": "Osun",
+    "capital": "Osogbo",
+    "region": "South West"
+  },
+  {
+    "state": "Oyo",
+    "capital": "Ibadan",
+    "region": "South West"
+  },
+  {
+    "state": "Plateau",
+    "capital": "Jos",
+    "region": "North Central"
+  },
+  {
+    "state": "Rivers",
+    "capital": "Port Harcourt",
+    "region": "South South"
+  },
+  {
+    "state": "Sokoto",
+    "capital": "Sokoto",
+    "region": "North West"
+  },
+  {
+    "state": "Taraba",
+    "capital": "Jalingo",
+    "region": "North East"
+  },
+  {
+    "state": "Yobe",
+    "capital": "Damaturu",
+    "region": "North East"
+  },
+  {
+    "state": "Zamfara",
+    "capital": "Gusau",
+    "region": "North West"
+  },
+  {
+    "state": "Federal Capital Territory",
+    "capital": "Abuja",
+    "region": "North Central"
+  }
+]
