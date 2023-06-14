@@ -38,7 +38,7 @@ const getSingleStateByID = catchAsync(async (req, res, next) => {
     return next(new AppError("Please provide an ID"));
   }
 
-  const state = States.findByID(stateId);
+  const state = await States.findById(stateId);
 
   if (!state) {
     return next(new AppError("No state with the specified ID found!!!"));
@@ -50,4 +50,29 @@ const getSingleStateByID = catchAsync(async (req, res, next) => {
   });
 });
 
-module.exports = { getAllState, createNewState, getSingleStateByID };
+// Get Single state using the state slug
+const getSingleStateBySlug = catchAsync(async (req, res, next) => {
+  const slug = req.params.slug;
+
+  if (!slug) {
+    return next(new AppError("Please provide an ID"));
+  }
+
+  const state = await States.findOne({ slug: slug });
+
+  if (!state) {
+    return next(new AppError("No state with the specified slug found!!!"));
+  }
+
+  res.status(200).json({
+    status: "success",
+    state,
+  });
+});
+
+module.exports = {
+  getAllState,
+  createNewState,
+  getSingleStateByID,
+  getSingleStateBySlug,
+};

@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+const slugify = require("slugify");
 
 const stateSchema = mongoose.Schema({
   state: {
@@ -25,6 +26,14 @@ const stateSchema = mongoose.Schema({
     ],
     trim: true,
   },
+  slug: {
+    type: String,
+  },
+});
+
+stateSchema.pre("save", function (next) {
+  this.slug = slugify(this.state, { lower: true });
+  next();
 });
 
 const States = mongoose.model("States", stateSchema);

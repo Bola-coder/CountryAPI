@@ -8,4 +8,7 @@ router
   .get(statesController.getAllState)
   .post(statesController.createNewState);
 
+router.route("/states/:id").get(statesController.getSingleStateByID);
+router.route("/states/slug/:slug").get(statesController.getSingleStateBySlug);
+
 module.exports = router;
