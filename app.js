@@ -1,6 +1,7 @@
 const express = require("express");
 const morgan = require("morgan");
 const stateRoute = require("./routes/states");
+const lgaRoute = require("./routes/lga");
 const AppError = require("./utilities/AppError");
 const errorController = require("./controllers/error");
 
@@ -10,7 +11,8 @@ app.use(morgan("dev"));
 
 app.use(express.json());
 
-app.use("/api/v1", stateRoute);
+app.use("/api/v1/state", stateRoute);
+app.use("/api/v1/lga", lgaRoute);
 
 app.all("*", (req, res, next) => {
   const error = new AppError(

@@ -4,11 +4,11 @@ const statesController = require("../controllers/states");
 const router = express.Router();
 
 router
-  .route("/states")
+  .route("/")
   .get(statesController.getAllState)
   .post(statesController.createNewState);
 
-router.route("/states/:id").get(statesController.getSingleStateByID);
-router.route("/states/slug/:slug").get(statesController.getSingleStateBySlug);
+router.route("/:id").get(statesController.getSingleStateByID);
+router.route("/slug/:slug").get(statesController.getSingleStateBySlug);
 
 module.exports = router;
