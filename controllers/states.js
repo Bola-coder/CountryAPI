@@ -17,18 +17,18 @@ const getAllState = catchAsync(async (req, res, next) => {
 });
 
 // Create a new State
-const createNewState = catchAsync(async (req, res, next) => {
-  const state = await States.create(req.body);
+// const createNewState = catchAsync(async (req, res, next) => {
+//   const state = await States.create(req.body);
 
-  if (!state) {
-    return next(new AppError("Failed to create new state", 404));
-  }
+//   if (!state) {
+//     return next(new AppError("Failed to create new state", 404));
+//   }
 
-  res.status(200).json({
-    status: "success",
-    state,
-  });
-});
+//   res.status(200).json({
+//     status: "success",
+//     state,
+//   });
+// });
 
 // Get Single state using the state ID
 const getSingleStateByID = catchAsync(async (req, res, next) => {

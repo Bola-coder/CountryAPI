@@ -4,7 +4,8 @@
   "description": "A simple API to provide Nigerian states and local governments for each state",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon start"
+    "start": "nodemon start",
+    "prod": "cross-env NODE_ENV=production nodemon server.js"
   },
   "keywords": [
     "NODEJS",
