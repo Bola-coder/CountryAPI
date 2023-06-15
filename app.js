@@ -11,7 +11,7 @@ app.use(morgan("dev"));
 
 app.use(express.json());
 
-app.use("/api/v1/state", stateRoute);
+app.use("/api/v1/states", stateRoute);
 app.use("/api/v1/lga", lgaRoute);
 
 app.all("*", (req, res, next) => {
