@@ -72,7 +72,7 @@ const getSingleStateBySlug = catchAsync(async (req, res, next) => {
 
 module.exports = {
   getAllState,
-  createNewState,
+  // createNewState,
   getSingleStateByID,
   getSingleStateBySlug,
 };
