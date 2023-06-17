@@ -70,9 +70,51 @@ const getSingleStateBySlug = catchAsync(async (req, res, next) => {
   });
 });
 
+// Get States in A Region
+const getStatesInARegion = catchAsync(async (req, res, next) => {
+  const region = req.body.region;
+  if (!region) {
+    return next(
+      new AppError("Please include the region in the request parameter", 404)
+    );
+  }
+  const regionList = [
+    "North Central",
+    "North East",
+    "North West",
+    "South East",
+    "South South",
+    "South West",
+  ];
+  let isValid = false;
+  for (let i = 0; i < region.length; i++) {
+    if (region === regionList[i]) {
+      isValid = true;
+    }
+  }
+  if (!isValid) {
+    return next(
+      new AppError("Invalid region. Please input in a valid region", 400)
+    );
+  }
+  const states = await States.find({ region: region });
+  if (!states) {
+    return next(
+      new AppError("Error getting states in the region supplied", 404)
+    );
+  }
+
+  res.status(200).json({
+    result: states.length,
+    region: region,
+    status: "success",
+    states,
+  });
+});
 module.exports = {
   getAllState,
   // createNewState,
   getSingleStateByID,
   getSingleStateBySlug,
+  getStatesInARegion,
 };
