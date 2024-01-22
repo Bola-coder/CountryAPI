@@ -1,7 +1,7 @@
 {
   "name": "countryapi",
   "version": "1.0.0",
-  "description": "A simple API to provide Nigerian states and local governments for each state",
+  "description": "A simple API to provide Nigerian states and local governments areas for each state",
   "main": "server.js",
   "scripts": {
     "start": "nodemon start",

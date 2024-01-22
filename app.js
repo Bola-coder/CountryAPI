@@ -11,6 +11,13 @@ app.use(morgan("dev"));
 
 app.use(express.json());
 
+app.get("/api/v1", (req, res) => {
+  res.status(200).json({
+    status: "success",
+    message:
+      "Welcome to Nigeria LGA API. Please visit /api/v1/states or /api/v1/lga to get started or checkout the documentation on \n\n https://documenter.getpostman.com/view/16535188/2s93sgVVjm",
+  });
+});
 app.use("/api/v1/states", stateRoute);
 app.use("/api/v1/lga", lgaRoute);
 
